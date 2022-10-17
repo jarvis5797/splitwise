@@ -1,0 +1,5 @@
+package com.jarvis.splitWise.service;
+
+public class UserService {
+
+}
