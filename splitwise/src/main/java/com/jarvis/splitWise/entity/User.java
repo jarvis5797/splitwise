@@ -61,6 +61,11 @@ public class User {
 		this.contactNo = contactNo;
 		this.roles = roles;
 	}
+	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getId() {
 		return id;
 	}
