@@ -28,10 +28,10 @@ public class UserRegistrationController {
 		return "html/registration";
 	}
 	
-//	@PostMapping
-//	public String registerUserAccount(@ModelAttribute("user") UserRegistrationDao registrationDao) {
-//		userService.save(registrationDao);
-//		return "redirect:/registration?success";
-//	}
+	@PostMapping("/save")
+	public String registerUserAccount(@ModelAttribute("user") UserRegistrationDao registrationDao) {
+		userService.save(registrationDao);
+		return "redirect:/registration?success";
+	}
 	
 }
