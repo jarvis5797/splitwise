@@ -30,8 +30,10 @@ public class UserRegistrationController {
 	
 	@PostMapping("/save")
 	public String registerUserAccount(@ModelAttribute("user") UserRegistrationDao registrationDao) {
+		System.out.println(registrationDao);
+
 		userService.save(registrationDao);
-		return "redirect:/registration?success";
+		return "html/registration";
 	}
 	
 }
